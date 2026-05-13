@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-luxe-950 text-white antialiased;
+  background-image: radial-gradient(circle at 20% 10%, rgba(122, 60, 255, 0.2), transparent 30%),
+    radial-gradient(circle at 85% 25%, rgba(80, 213, 255, 0.14), transparent 26%),
+    linear-gradient(150deg, #05020a 0%, #10091a 40%, #0a0711 100%);
+  min-height: 100vh;
+}
+
+.glass {
+  @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+}
+
+.scanline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -12%;
+  height: 30%;
+  background: linear-gradient(to bottom, transparent, rgba(80, 213, 255, 0.2), transparent);
+  animation: scan 1.8s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(350%);
+  }
+}

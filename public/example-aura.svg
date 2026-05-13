@@ -1,0 +1,35 @@
+<svg width="512" height="640" viewBox="0 0 512 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="20" x2="460" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1230"/>
+      <stop offset="0.5" stop-color="#0E0A18"/>
+      <stop offset="1" stop-color="#07050F"/>
+    </linearGradient>
+    <radialGradient id="aura1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(178 170) rotate(59) scale(250 260)">
+      <stop stop-color="#7A3CFF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#7A3CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 210) rotate(120) scale(190 210)">
+      <stop stop-color="#50D5FF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#50D5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 500) rotate(80) scale(220 260)">
+      <stop stop-color="#D7A84B" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#D7A84B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="640" rx="32" fill="url(#bg)"/>
+  <rect width="512" height="640" rx="32" fill="url(#aura1)"/>
+  <rect width="512" height="640" rx="32" fill="url(#aura2)"/>
+  <rect width="512" height="640" rx="32" fill="url(#aura3)"/>
+
+  <circle cx="256" cy="235" r="92" fill="#E8DCC8" fill-opacity="0.9"/>
+  <path d="M150 420C150 352 205 318 256 318C307 318 362 352 362 420V508H150V420Z" fill="#E8DCC8" fill-opacity="0.86"/>
+
+  <path d="M174 238C174 178 214 136 256 136C298 136 338 178 338 238C338 243 338 247 337 251C330 223 308 206 284 206C264 206 246 218 236 236C226 214 206 198 182 196C177 209 174 223 174 238Z" fill="#1A1328"/>
+
+  <circle cx="228" cy="236" r="6" fill="#2A1F3C"/>
+  <circle cx="284" cy="236" r="6" fill="#2A1F3C"/>
+  <path d="M230 276C238 286 246 290 256 290C266 290 274 286 282 276" stroke="#2A1F3C" stroke-width="6" stroke-linecap="round"/>
+</svg>
