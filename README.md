@@ -44,3 +44,4 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Notes
 
 - If `OPENAI_API_KEY` is missing or API call fails, the app returns a stylish fallback aura result so the UX still works.
+# AI-Aura-Scanner
