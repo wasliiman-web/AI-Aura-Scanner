@@ -25,6 +25,10 @@
  *
  * You can reuse one slot across placements while testing; for revenue, use
  * separate units per placement in AdSense.
+ *
+ * Site ownership: the root layout emits
+ *   <meta name="google-adsense-account" content="…" />
+ * when `NEXT_PUBLIC_ADSENSE_CLIENT_ID` is set (same value as here — no duplicate literals).
  * ---------------------------------------------------------------------------
  */
 

@@ -15,6 +15,9 @@ const siteDescription =
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || "http://localhost:3000";
 
+/** Same value as AdSense snippet `?client=` — used for script + ownership meta (set in `.env.local` / Vercel). */
+const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID?.trim();
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -37,7 +40,14 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true
-  }
+  },
+  ...(adsenseClientId
+    ? {
+        other: {
+          "google-adsense-account": adsenseClientId
+        }
+      }
+    : {})
 };
 
 export const viewport: Viewport = {
