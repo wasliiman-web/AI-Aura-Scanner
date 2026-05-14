@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit } from "next/font/google";
 import { AdSenseScript } from "@/components/ads/adsense-script";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import "@/styles/globals.css";
 
 const outfit = Outfit({
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={outfit.variable}>
       <body className="font-sans antialiased">
+        <GoogleAnalytics />
         <AdSenseScript />
         {children}
       </body>
