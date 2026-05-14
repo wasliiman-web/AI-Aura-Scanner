@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply bg-luxe-950 text-white antialiased;
+  @apply bg-luxe-950 text-white antialiased font-sans;
   background-image: radial-gradient(circle at 20% 10%, rgba(122, 60, 255, 0.2), transparent 30%),
     radial-gradient(circle at 85% 25%, rgba(80, 213, 255, 0.14), transparent 26%),
     linear-gradient(150deg, #05020a 0%, #10091a 40%, #0a0711 100%);
@@ -16,6 +16,28 @@ body {
 
 .glass {
   @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+}
+
+.btn-cta-glow {
+  animation: ctaGlow 2.4s ease-in-out infinite;
+}
+
+@keyframes ctaGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 24px rgba(122, 60, 255, 0.45),
+      0 0 48px rgba(80, 213, 255, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 36px rgba(80, 213, 255, 0.45),
+      0 0 72px rgba(215, 168, 75, 0.18);
+  }
+}
+
+.ad-slot {
+  contain: layout style;
 }
 
 .scanline {

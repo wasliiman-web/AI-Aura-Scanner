@@ -58,7 +58,7 @@ export function ResultCard({ analysis, imagePreview }: ResultCardProps) {
         <div className="relative space-y-5">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/20 px-3 py-1 text-xs uppercase tracking-[0.2em] text-white/80">
             <Sparkles size={13} />
-            AI Aura Reading
+            Rate Your Aura
           </p>
 
           <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
