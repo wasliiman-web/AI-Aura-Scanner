@@ -1,5 +1,5 @@
 import { AmbientBackground } from "@/components/ambient-bg";
-import { AdPlaceholder } from "@/components/landing/ad-placeholder";
+import { GoogleAd } from "@/components/ads/google-ad";
 import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 import { ResultPreviewSection } from "@/components/landing/result-preview-section";
 import { SidebarAd } from "@/components/landing/sidebar-ad";
@@ -41,9 +41,11 @@ export default function HomePage() {
 
             <ResultPreviewSection />
 
-            <AdPlaceholder variant="inline" className="mx-auto max-w-4xl" />
+            <GoogleAd placement="inline" />
 
             <HowItWorksSection />
+
+            <GoogleAd placement="between" />
 
             <ViralShareSection />
 

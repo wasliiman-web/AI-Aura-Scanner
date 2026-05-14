@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit } from "next/font/google";
+import { AdSenseScript } from "@/components/ads/adsense-script";
 import "@/styles/globals.css";
 
 const outfit = Outfit({
@@ -48,7 +49,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={outfit.variable}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <AdSenseScript />
+        {children}
+      </body>
     </html>
   );
 }

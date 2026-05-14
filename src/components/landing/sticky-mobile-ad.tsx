@@ -1,4 +1,4 @@
-import { AdPlaceholder } from "@/components/landing/ad-placeholder";
+import { GoogleAd } from "@/components/ads/google-ad";
 
 export function StickyMobileAd() {
   return (
@@ -6,7 +6,7 @@ export function StickyMobileAd() {
       className="fixed inset-x-0 bottom-0 z-40 md:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
     >
-      <AdPlaceholder variant="sticky" className="rounded-none border-x-0 border-b-0" aria-label="Mobile advertisement placeholder" />
+      <GoogleAd placement="sticky" eager className="!my-0 !max-w-none" />
     </div>
   );
 }

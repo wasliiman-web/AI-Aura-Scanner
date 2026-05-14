@@ -5,7 +5,8 @@ import { Loader2, Sparkles, Upload } from "lucide-react";
 import Image from "next/image";
 import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 import { AuraAnalysis } from "@/lib/types";
-import { AdPlaceholder } from "@/components/landing/ad-placeholder";
+import { GoogleAd } from "@/components/ads/google-ad";
+import { SampleAuraReadingShowcase } from "@/components/landing/sample-aura-reading-showcase";
 import { ResultCard } from "@/components/result-card";
 
 const MAX_IMAGE_BYTES = 4 * 1024 * 1024;
@@ -150,7 +151,11 @@ export function UploadForm() {
         </form>
       </motion.section>
 
-      <AdPlaceholder variant="horizontal" className="mx-auto max-w-4xl" />
+      <GoogleAd placement="belowHero" />
+
+      <SampleAuraReadingShowcase />
+
+      <GoogleAd placement="belowSample" />
 
       <section ref={resultsRef} id="aura-result" aria-live="polite" className="scroll-mt-28">
         {isLoading ? (

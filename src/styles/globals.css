@@ -40,6 +40,11 @@ body {
   contain: layout style;
 }
 
+/* AdSense: reserve space via component min-heights; avoid layout thrash */
+.adsbygoogle {
+  contain: layout style;
+}
+
 .scanline {
   position: absolute;
   left: 0;
